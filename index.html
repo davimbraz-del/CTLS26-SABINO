@@ -34,6 +34,7 @@
   --marker:'Permanent Marker','Comic Sans MS',cursive;
 }
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 html{scroll-behavior:smooth;scroll-padding-top:84px}
 body{margin:0;background:var(--ink);color:var(--white);font-family:var(--body);font-size:17px;line-height:1.6;overflow-x:hidden}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--ink)}
@@ -231,8 +232,7 @@ footer{border-top:1px solid var(--line)}
     <nav class="nav-links" id="menu" aria-label="Seções">
       <a href="#metodologia">Metodologia</a>
       <a href="#horarios">Horários</a>
-      <a href="#atletas">Atletas</a>
-      <a href="#campeonatos">Campeonatos</a>
+      <a href="#professor">Professor</a>
       <a href="#contato">Contato</a>
     </nav>
     <a class="btn btn-blue btn-sm nav-cta" data-wa="Olá! Quero marcar uma aula experimental no CT LS26." href="https://www.instagram.com/ls26ftv/" target="_blank" rel="noopener"><span>Aula experimental</span></a>
@@ -385,18 +385,8 @@ footer{border-top:1px solid var(--line)}
   </div>
 </section>
 
-<section class="sec" id="atletas">
+<section class="sec" id="professor">
   <div class="wrap stack">
-    <div class="head">
-      <h2 class="title">Nossos <em>atletas</em></h2>
-      <p class="lead">Quem treina aqui e leva o nome do CT para os campeonatos.</p>
-    </div>
-    <div class="people">
-      <article class="person"><div class="ph">[Foto]</div><h3>[Nome do atleta]</h3><p>[Categoria · principal título]</p></article>
-      <article class="person"><div class="ph">[Foto]</div><h3>[Nome da atleta]</h3><p>[Categoria · principal título]</p></article>
-      <article class="person"><div class="ph">[Foto]</div><h3>[Nome do atleta]</h3><p>[Categoria · principal título]</p></article>
-      <article class="person"><div class="ph">[Foto]</div><h3>[Nome da atleta]</h3><p>[Categoria · principal título]</p></article>
-    </div>
     <div class="coach">
       <div class="ph">[Foto]</div>
       <div class="coach-copy">
@@ -404,26 +394,6 @@ footer{border-top:1px solid var(--line)}
         <h3>[Nome do professor]</h3>
         <p>[Resumo da trajetória: há quanto tempo joga e ensina, títulos, o que define o método LS26.]</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="sec cup" id="campeonatos">
-  <div class="wrap cup-row">
-    <div class="cup-copy">
-      <span class="eyebrow">Campeonatos</span>
-      <h2 class="title">Próximo campeonato</h2>
-      <p class="lead">Escolha sua categoria, monte sua dupla e garanta a vaga.</p>
-    </div>
-    <div class="ticket">
-      <h3>[Nome do torneio]</h3>
-      <dl>
-        <div><dt>Data</dt><dd>[DD/MM]</dd></div>
-        <div><dt>Local</dt><dd>[Local]</dd></div>
-        <div><dt>Categorias</dt><dd>[Masc · Fem · Misto]</dd></div>
-        <div><dt>Inscrição</dt><dd>[R$ valor por dupla]</dd></div>
-      </dl>
-      <a class="btn btn-blue" data-wa="Olá! Quero inscrever minha dupla no próximo campeonato." href="https://www.instagram.com/ls26ftv/" target="_blank" rel="noopener"><span>Inscrever minha dupla</span></a>
     </div>
   </div>
 </section>
