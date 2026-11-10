@@ -99,17 +99,8 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--blue-soft);outline-
 .stats div{display:flex;flex-direction:column-reverse}
 .stats dd{margin:0;font-family:var(--display);font-weight:800;font-size:46px;line-height:1;font-variant-numeric:tabular-nums}
 .stats dt{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
-.hero-art{flex:1 1 360px;min-width:0;position:relative;max-width:460px;margin-inline:auto}
-.hero-art::before{content:"";position:absolute;inset:18px -18px -18px 18px;border:3px solid var(--blue);transform:skewX(-4deg)}
-.court{position:relative;aspect-ratio:4/5;max-width:100%;transform:skewX(-4deg);overflow:hidden;background:
-  repeating-linear-gradient(0deg,rgba(127,166,255,.16) 0 1px,transparent 1px 26px),
-  repeating-linear-gradient(90deg,rgba(127,166,255,.16) 0 1px,transparent 1px 26px),
-  linear-gradient(160deg,#16244A,#0A1022)}
-.court svg{position:absolute;inset:0;width:100%;height:100%}
-.court img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.ball{transform-origin:150px 150px;animation:spin 14s linear infinite}
-.hero-tag{position:absolute;bottom:-28px;left:-10px;font-family:var(--marker);font-size:clamp(60px,9vw,88px);line-height:1;color:var(--white);text-shadow:4px 4px 0 var(--blue)}
-@keyframes spin{to{transform:rotate(360deg)}}
+.hero-art{flex:1 1 320px;min-width:0;max-width:440px;margin-inline:auto}
+.hero-art img{display:block;width:100%;height:auto;filter:drop-shadow(0 24px 60px rgba(31,107,255,.45))}
 
 /* faixa */
 .ticker{background:var(--blue);transform:skewY(-1.5deg);margin-top:-12px;overflow:hidden;position:relative;z-index:2}
@@ -228,7 +219,7 @@ footer{border-top:1px solid var(--line)}
   .nav-links.open{display:flex}
   .nav-links a{padding-block:14px;border-bottom:1px solid var(--line);font-size:20px}
   .hero-row{padding-block:48px 88px;gap:48px}
-  .hero-art{max-width:300px}
+  .hero-art{max-width:260px}
   .sec{padding-block:72px}
   .coach{padding:24px}
   .steps li{padding-right:0}
@@ -287,22 +278,8 @@ footer{border-top:1px solid var(--line)}
         <div><dt>níveis de turma</dt><dd>3</dd></div>
       </dl>
     </div>
-    <div class="hero-art" aria-hidden="true">
-      <!-- Para usar foto: troque o <svg> abaixo por <img src="foto.jpg" alt=""> -->
-      <div class="court">
-        <svg viewBox="0 0 400 500" fill="none" preserveAspectRatio="xMidYMid slice">
-          <path d="M0 330 H400" stroke="#FFFFFF" stroke-width="5"></path>
-          <path d="M0 338 H400" stroke="#1F6BFF" stroke-width="3"></path>
-          <path d="M40 470 Q150 40 330 250" stroke="#7FA6FF" stroke-width="3" stroke-dasharray="4 12" stroke-linecap="round"></path>
-          <g transform="translate(180 30)">
-            <g class="ball">
-              <circle cx="150" cy="150" r="62" fill="#FFFFFF"></circle>
-              <path d="M150 88 A62 62 0 0 1 150 212 M88 150 A62 62 0 0 0 212 150 M106 106 Q150 150 194 106 M106 194 Q150 150 194 194" stroke="#1F6BFF" stroke-width="5" stroke-linecap="round"></path>
-            </g>
-          </g>
-        </svg>
-      </div>
-      <div class="hero-tag">LS26</div>
+    <div class="hero-art">
+      <img src="assets/img/logo-grande.webp" alt="Escudo do CT LS26 Sabino Futvôlei" width="720" height="720">
     </div>
   </div>
 </section>
