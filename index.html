@@ -159,7 +159,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--blue-soft);outline-
 .people{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:24px 16px}
 .person{display:flex;flex-direction:column;gap:12px}
 .ph{background:linear-gradient(170deg,#16244A,#0A1022);display:flex;align-items:center;justify-content:center;color:var(--mute);font-size:14px;letter-spacing:.08em;text-transform:uppercase;text-align:center;padding:12px;max-width:100%}
-.person .ph{aspect-ratio:3/4;border-bottom:4px solid var(--blue)}
+.person img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;border-bottom:4px solid var(--blue)}
 .person h3{font-family:var(--display);font-weight:800;font-size:26px;text-transform:uppercase;line-height:1}
 .person p{font-size:15px;color:var(--text)}
 .coach{display:flex;flex-wrap:wrap;gap:36px;align-items:center;background:var(--panel);border:1px solid var(--line);padding:36px}
@@ -232,7 +232,7 @@ footer{border-top:1px solid var(--line)}
     <nav class="nav-links" id="menu" aria-label="Seções">
       <a href="#metodologia">Metodologia</a>
       <a href="#horarios">Horários</a>
-      <a href="#professor">Professor</a>
+      <a href="#professores">Professores</a>
       <a href="#contato">Contato</a>
     </nav>
     <a class="btn btn-blue btn-sm nav-cta" data-wa="Olá! Quero marcar uma aula experimental no CT LS26." href="https://www.instagram.com/ls26ftv/" target="_blank" rel="noopener"><span>Aula experimental</span></a>
@@ -385,15 +385,17 @@ footer{border-top:1px solid var(--line)}
   </div>
 </section>
 
-<section class="sec" id="professor">
+<section class="sec" id="professores">
   <div class="wrap stack">
-    <div class="coach">
-      <div class="ph">[Foto]</div>
-      <div class="coach-copy">
-        <span class="eyebrow">Professor</span>
-        <h3>[Nome do professor]</h3>
-        <p>[Resumo da trajetória: há quanto tempo joga e ensina, títulos, o que define o método LS26.]</p>
-      </div>
+    <div class="head">
+      <h2 class="title">Nossos <em>professores</em></h2>
+      <p class="lead">Quem está na areia com você em cada treino.</p>
+    </div>
+    <div class="people">
+      <article class="person"><img src="assets/img/sabino.jpg" alt="Professor Sabino" width="600" height="800" loading="lazy"><h3>Sabino</h3><p>Professor</p></article>
+      <article class="person"><img src="assets/img/luan.jpg" alt="Professor Luan" width="600" height="800" loading="lazy"><h3>Luan</h3><p>Professor</p></article>
+      <article class="person"><img src="assets/img/carioca.jpg" alt="Professor Carioca" width="600" height="800" loading="lazy"><h3>Carioca</h3><p>Professor</p></article>
+      <article class="person"><img src="assets/img/mago.jpg" alt="Professor Mago" width="600" height="800" loading="lazy"><h3>Mago</h3><p>Professor</p></article>
     </div>
   </div>
 </section>
