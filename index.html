@@ -11,6 +11,11 @@
 <meta property="og:title" content="CT LS26 Futevôlei">
 <meta property="og:description" content="Quer evoluir de verdade? Vem pro método LS26. Marque sua aula experimental.">
 <meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://ctls26.netlify.app/">
+<meta property="og:image" content="https://ctls26.netlify.app/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Crect width='34' height='34' fill='%2305070D'/%3E%3Cpath d='M3 26 L1 10 L10 17 L17 6 L24 17 L33 10 L31 26 Z' fill='none' stroke='%231F6BFF' stroke-width='2.5' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -181,6 +186,24 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--blue-soft);outline-
 .ticket dd{margin:0}
 .ticket .btn{align-self:flex-start}
 
+/* local */
+.place{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:0;background:var(--panel);border:1px solid var(--line)}
+.place-info{padding:36px;display:flex;flex-direction:column;gap:14px;align-items:flex-start;min-width:0}
+.place-info address{font-style:normal;font-family:var(--display);font-weight:800;font-size:30px;line-height:1.1;text-transform:uppercase}
+.place-info p{color:var(--text)}
+.place iframe{display:block;width:100%;height:100%;min-height:320px;border:0;background:#0A1022}
+
+/* dúvidas */
+.faq{display:flex;flex-direction:column;border-top:1px solid var(--line);max-width:820px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:64px;padding-block:14px;font-family:var(--display);font-weight:800;font-size:24px;text-transform:uppercase;line-height:1.1}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex:0 0 auto;font-family:var(--body);font-weight:400;font-size:30px;line-height:1;color:var(--blue)}
+.faq details[open] summary::after{content:"−"}
+.faq summary:hover{color:var(--blue-soft)}
+.faq summary:focus-visible{outline:3px solid var(--blue-soft);outline-offset:3px}
+.faq p{color:var(--text);padding-bottom:22px;max-width:40em}
+
 /* contato */
 .join{text-align:center}
 .join .stack{align-items:center;gap:24px}
@@ -233,6 +256,8 @@ footer{border-top:1px solid var(--line)}
       <a href="#metodologia">Metodologia</a>
       <a href="#horarios">Horários</a>
       <a href="#professores">Professores</a>
+      <a href="#local">Onde fica</a>
+      <a href="#duvidas">Dúvidas</a>
       <a href="#contato">Contato</a>
     </nav>
     <a class="btn btn-blue btn-sm nav-cta" data-wa="Olá! Quero marcar uma aula experimental no CT LS26." href="https://www.instagram.com/ls26ftv/" target="_blank" rel="noopener"><span>Aula experimental</span></a>
@@ -396,6 +421,34 @@ footer{border-top:1px solid var(--line)}
       <article class="person"><img src="assets/img/luan.jpg" alt="Professor Luan" width="600" height="800" loading="lazy"><h3>Luan</h3><p>Professor</p></article>
       <article class="person"><img src="assets/img/carioca.jpg" alt="Professor Carioca" width="600" height="800" loading="lazy"><h3>Carioca</h3><p>Professor</p></article>
       <article class="person"><img src="assets/img/mago.jpg" alt="Professor Mago" width="600" height="800" loading="lazy"><h3>Mago</h3><p>Professor</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="local" style="padding-top:0">
+  <div class="wrap stack">
+    <h2 class="title">Onde <em>fica</em></h2>
+    <div class="place">
+      <div class="place-info">
+        <span class="eyebrow">Janga · Paulista - PE</span>
+        <address>Av. João Fonseca de Albuquerque, 641</address>
+        <p>CEP 53435-010</p>
+        <a class="btn btn-blue" href="https://www.google.com/maps/dir/?api=1&amp;destination=Av.+Jo%C3%A3o+Fonseca+de+Albuquerque%2C+641+-+Janga%2C+Paulista+-+PE%2C+53435-010" target="_blank" rel="noopener"><span>Como chegar</span></a>
+      </div>
+      <iframe title="Mapa do CT LS26 no Janga, Paulista" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Av.+Jo%C3%A3o+Fonseca+de+Albuquerque%2C+641+-+Janga%2C+Paulista+-+PE%2C+53435-010&amp;output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="duvidas" style="padding-top:0">
+  <div class="wrap stack">
+    <h2 class="title">Dúvidas <em>comuns</em></h2>
+    <div class="faq">
+      <details><summary>Nunca joguei. Posso começar?</summary><p>Pode. As turmas são separadas por nível e tem turma para quem está começando do zero.</p></details>
+      <details><summary>Como sei qual é a minha turma?</summary><p>Na aula experimental o professor avalia seu nível e indica o melhor horário.</p></details>
+      <details><summary>Quais são os dias de treino?</summary><p>De terça a sexta de manhã (5:30 e 6:30) e de terça a quinta à tarde e à noite (15:00 e 18:30).</p></details>
+      <details><summary>Tem time de competição?</summary><p>Tem, masculino e feminino. Os times treinam de terça a quinta: masculino às 16:00 e às 20:30, feminino às 19:30.</p></details>
+      <details><summary>Como marco a aula experimental?</summary><p>Chama no WhatsApp <a data-wa="Olá! Quero marcar uma aula experimental no CT LS26." href="https://wa.me/5581996060090" target="_blank" rel="noopener">(81) 99606-0090</a> e escolhe o horário.</p></details>
     </div>
   </div>
 </section>
