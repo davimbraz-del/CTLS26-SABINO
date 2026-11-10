@@ -179,6 +179,8 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--blue-soft);outline-
 .ticket dd{margin:0}
 .ticket .btn{align-self:flex-start}
 
+#local,#duvidas{scroll-margin-top:36px}
+
 /* local */
 .place{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:0;background:var(--panel);border:1px solid var(--line)}
 .place-info{padding:36px;display:flex;flex-direction:column;gap:14px;align-items:flex-start;min-width:0}
@@ -204,6 +206,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--blue-soft);outline-
 .join h2{font-family:var(--display);font-weight:900;font-style:italic;font-size:clamp(64px,11vw,140px);line-height:.85;text-transform:uppercase;margin-top:-10px}
 .join .lead{font-size:19px}
 .contact{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 36px;padding-top:20px;color:var(--text);font-size:16px;list-style:none;margin:0;padding-inline:0}
+.contact a,.faq p a{display:inline-block;padding-block:11px}
 footer{border-top:1px solid var(--line)}
 .foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;padding-block:28px;font-size:14px;color:var(--mute)}
 .foot .brand{font-size:20px}
@@ -211,7 +214,7 @@ footer{border-top:1px solid var(--line)}
 /* barra fixa no celular */
 .bar{display:none}
 
-@media (max-width:820px){
+@media (max-width:960px){
   html{scroll-padding-top:76px}
   .nav-toggle{display:inline-flex}
   .nav-cta{display:none}
@@ -227,6 +230,10 @@ footer{border-top:1px solid var(--line)}
   .bar .btn{width:100%;transform:none}
   .bar .btn>span{transform:none}
   body{padding-bottom:calc(72px + env(safe-area-inset-bottom,0px))}
+}
+@media (max-height:480px){
+  .bar{display:none}
+  body{padding-bottom:0}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -253,7 +260,7 @@ footer{border-top:1px solid var(--line)}
       <a href="#duvidas">Dúvidas</a>
       <a href="#contato">Contato</a>
     </nav>
-    <a class="btn btn-blue btn-sm nav-cta" data-wa="Olá! Quero marcar uma aula experimental no CT LS26." href="https://www.instagram.com/ls26ftv/" target="_blank" rel="noopener"><span>Aula experimental</span></a>
+    <a class="btn btn-blue btn-sm nav-cta" data-wa="Olá! Quero marcar uma aula experimental no CT LS26." href="https://wa.me/5581996060090?text=Ol%C3%A1!%20Quero%20marcar%20uma%20aula%20experimental%20no%20CT%20LS26." target="_blank" rel="noopener"><span>Aula experimental</span></a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
     </button>
@@ -269,7 +276,7 @@ footer{border-top:1px solid var(--line)}
       <h1>Quer evoluir<br>de <em>verdade?</em></h1>
       <p class="hero-lead">Vem pro <strong>método LS26</strong>. Turmas de terça a sexta para quem está começando, quem quer subir de nível e quem joga para competir.</p>
       <div class="cta-row">
-        <a class="btn btn-blue" data-wa="Olá! Quero marcar uma aula experimental no CT LS26." href="https://www.instagram.com/ls26ftv/" target="_blank" rel="noopener"><span>Marcar aula experimental</span></a>
+        <a class="btn btn-blue" data-wa="Olá! Quero marcar uma aula experimental no CT LS26." href="https://wa.me/5581996060090?text=Ol%C3%A1!%20Quero%20marcar%20uma%20aula%20experimental%20no%20CT%20LS26." target="_blank" rel="noopener"><span>Marcar aula experimental</span></a>
         <a class="btn btn-ghost" href="#horarios"><span>Ver horários</span></a>
       </div>
       <dl class="stats">
@@ -346,43 +353,43 @@ footer{border-top:1px solid var(--line)}
         <div class="slot-top"><time datetime="05:30">5:30</time><span class="tag">Turma</span></div>
         <h3>Turma da manhã</h3>
         <ul class="days" aria-label="Terça a sexta"><li>Ter</li><li>Qua</li><li>Qui</li><li>Sex</li></ul>
-        <a data-wa="Olá! Quero fazer uma aula experimental na turma das 5:30." href="https://www.instagram.com/ls26ftv/" target="_blank" rel="noopener">Quero esse horário →</a>
+        <a data-wa="Olá! Quero fazer uma aula experimental na turma das 5:30." href="https://wa.me/5581996060090?text=Ol%C3%A1!%20Quero%20fazer%20uma%20aula%20experimental%20na%20turma%20das%205%3A30." target="_blank" rel="noopener">Quero esse horário →</a>
       </article>
       <article class="slot" data-kind="turma" data-time="06:30" data-days="2,3,4,5">
         <div class="slot-top"><time datetime="06:30">6:30</time><span class="tag">Turma</span></div>
         <h3>Turma da manhã</h3>
         <ul class="days" aria-label="Terça a sexta"><li>Ter</li><li>Qua</li><li>Qui</li><li>Sex</li></ul>
-        <a data-wa="Olá! Quero fazer uma aula experimental na turma das 6:30." href="https://www.instagram.com/ls26ftv/" target="_blank" rel="noopener">Quero esse horário →</a>
+        <a data-wa="Olá! Quero fazer uma aula experimental na turma das 6:30." href="https://wa.me/5581996060090?text=Ol%C3%A1!%20Quero%20fazer%20uma%20aula%20experimental%20na%20turma%20das%206%3A30." target="_blank" rel="noopener">Quero esse horário →</a>
       </article>
       <article class="slot" data-kind="turma" data-time="15:00" data-days="2,3,4">
         <div class="slot-top"><time datetime="15:00">15:00</time><span class="tag">Turma</span></div>
         <h3>Turma da tarde</h3>
         <ul class="days" aria-label="Terça a quinta"><li>Ter</li><li>Qua</li><li>Qui</li><li class="off">Sex</li></ul>
-        <a data-wa="Olá! Quero fazer uma aula experimental na turma das 15:00." href="https://www.instagram.com/ls26ftv/" target="_blank" rel="noopener">Quero esse horário →</a>
+        <a data-wa="Olá! Quero fazer uma aula experimental na turma das 15:00." href="https://wa.me/5581996060090?text=Ol%C3%A1!%20Quero%20fazer%20uma%20aula%20experimental%20na%20turma%20das%2015%3A00." target="_blank" rel="noopener">Quero esse horário →</a>
       </article>
       <article class="slot" data-kind="time" data-time="16:00" data-days="2,3,4">
         <div class="slot-top"><time datetime="16:00">16:00</time><span class="tag team">Time</span></div>
         <h3>Time masculino</h3>
         <ul class="days" aria-label="Terça a quinta"><li>Ter</li><li>Qua</li><li>Qui</li><li class="off">Sex</li></ul>
-        <a data-wa="Olá! Quero saber como entrar no time masculino (16:00)." href="https://www.instagram.com/ls26ftv/" target="_blank" rel="noopener">Quero entrar no time →</a>
+        <a data-wa="Olá! Quero saber como entrar no time masculino (16:00)." href="https://wa.me/5581996060090?text=Ol%C3%A1!%20Quero%20saber%20como%20entrar%20no%20time%20masculino%20(16%3A00)." target="_blank" rel="noopener">Quero entrar no time →</a>
       </article>
       <article class="slot" data-kind="turma" data-time="18:30" data-days="2,3,4">
         <div class="slot-top"><time datetime="18:30">18:30</time><span class="tag">Turma</span></div>
         <h3>Turma da noite</h3>
         <ul class="days" aria-label="Terça a quinta"><li>Ter</li><li>Qua</li><li>Qui</li><li class="off">Sex</li></ul>
-        <a data-wa="Olá! Quero fazer uma aula experimental na turma das 18:30." href="https://www.instagram.com/ls26ftv/" target="_blank" rel="noopener">Quero esse horário →</a>
+        <a data-wa="Olá! Quero fazer uma aula experimental na turma das 18:30." href="https://wa.me/5581996060090?text=Ol%C3%A1!%20Quero%20fazer%20uma%20aula%20experimental%20na%20turma%20das%2018%3A30." target="_blank" rel="noopener">Quero esse horário →</a>
       </article>
       <article class="slot" data-kind="time" data-time="19:30" data-days="2,3,4">
         <div class="slot-top"><time datetime="19:30">19:30</time><span class="tag team">Time</span></div>
         <h3>Time feminino</h3>
         <ul class="days" aria-label="Terça a quinta"><li>Ter</li><li>Qua</li><li>Qui</li><li class="off">Sex</li></ul>
-        <a data-wa="Olá! Quero saber como entrar no time feminino (19:30)." href="https://www.instagram.com/ls26ftv/" target="_blank" rel="noopener">Quero entrar no time →</a>
+        <a data-wa="Olá! Quero saber como entrar no time feminino (19:30)." href="https://wa.me/5581996060090?text=Ol%C3%A1!%20Quero%20saber%20como%20entrar%20no%20time%20feminino%20(19%3A30)." target="_blank" rel="noopener">Quero entrar no time →</a>
       </article>
       <article class="slot" data-kind="time" data-time="20:30" data-days="2,3,4">
         <div class="slot-top"><time datetime="20:30">20:30</time><span class="tag team">Time</span></div>
         <h3>Time masculino</h3>
         <ul class="days" aria-label="Terça a quinta"><li>Ter</li><li>Qua</li><li>Qui</li><li class="off">Sex</li></ul>
-        <a data-wa="Olá! Quero saber como entrar no time masculino (20:30)." href="https://www.instagram.com/ls26ftv/" target="_blank" rel="noopener">Quero entrar no time →</a>
+        <a data-wa="Olá! Quero saber como entrar no time masculino (20:30)." href="https://wa.me/5581996060090?text=Ol%C3%A1!%20Quero%20saber%20como%20entrar%20no%20time%20masculino%20(20%3A30)." target="_blank" rel="noopener">Quero entrar no time →</a>
       </article>
     </div>
     <p class="note">Não sabe qual turma é a sua? Na aula experimental o professor avalia seu nível e indica o melhor horário.</p>
@@ -427,7 +434,7 @@ footer{border-top:1px solid var(--line)}
       <details><summary>Como sei qual é a minha turma?</summary><p>Na aula experimental o professor avalia seu nível e indica o melhor horário.</p></details>
       <details><summary>Quais são os dias de treino?</summary><p>De terça a sexta de manhã (5:30 e 6:30) e de terça a quinta à tarde e à noite (15:00 e 18:30).</p></details>
       <details><summary>Tem time de competição?</summary><p>Tem, masculino e feminino. Os times treinam de terça a quinta: masculino às 16:00 e às 20:30, feminino às 19:30.</p></details>
-      <details><summary>Como marco a aula experimental?</summary><p>Chama no WhatsApp <a data-wa="Olá! Quero marcar uma aula experimental no CT LS26." href="https://wa.me/5581996060090" target="_blank" rel="noopener">(81) 99606-0090</a> e escolhe o horário.</p></details>
+      <details><summary>Como marco a aula experimental?</summary><p>Chama no WhatsApp <a data-wa="Olá! Quero marcar uma aula experimental no CT LS26." href="https://wa.me/5581996060090?text=Ol%C3%A1!%20Quero%20marcar%20uma%20aula%20experimental%20no%20CT%20LS26." target="_blank" rel="noopener">(81) 99606-0090</a> e escolhe o horário.</p></details>
     </div>
   </div>
 </section>
@@ -437,7 +444,7 @@ footer{border-top:1px solid var(--line)}
     <p class="join-pre">Faça parte dessa</p>
     <h2>Família!</h2>
     <p class="lead">A primeira aula é para conhecer o método e o time. Chama a gente e escolhe o horário.</p>
-    <a class="btn btn-blue btn-lg" id="cta-principal" data-wa="Olá! Quero marcar uma aula experimental no CT LS26." href="https://www.instagram.com/ls26ftv/" target="_blank" rel="noopener"><span>
+    <a class="btn btn-blue btn-lg" id="cta-principal" data-wa="Olá! Quero marcar uma aula experimental no CT LS26." href="https://wa.me/5581996060090?text=Ol%C3%A1!%20Quero%20marcar%20uma%20aula%20experimental%20no%20CT%20LS26." target="_blank" rel="noopener"><span>
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-13.5 7.8L3 21l1.2-4.4A9 9 0 1 1 21 12z"></path></svg>
       <b id="cta-texto" style="font-weight:inherit">Chamar no WhatsApp</b></span></a>
     <ul class="contact">
@@ -457,8 +464,8 @@ footer{border-top:1px solid var(--line)}
   </div>
 </footer>
 
-<div class="bar">
-  <a class="btn btn-blue" data-wa="Olá! Quero marcar uma aula experimental no CT LS26." href="https://www.instagram.com/ls26ftv/" target="_blank" rel="noopener"><span>Marcar aula experimental</span></a>
+<div class="bar" role="region" aria-label="Marcar aula experimental">
+  <a class="btn btn-blue" data-wa="Olá! Quero marcar uma aula experimental no CT LS26." href="https://wa.me/5581996060090?text=Ol%C3%A1!%20Quero%20marcar%20uma%20aula%20experimental%20no%20CT%20LS26." target="_blank" rel="noopener"><span>Marcar aula experimental</span></a>
 </div>
 
 <script>
@@ -479,12 +486,19 @@ var WHATSAPP = '5581996060090';
   // Menu no celular
   var toggle = document.querySelector('.nav-toggle');
   var menu = document.getElementById('menu');
-  function closeMenu() { menu.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); }
+  function closeMenu() { menu.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); toggle.setAttribute('aria-label', 'Abrir menu'); }
   toggle.addEventListener('click', function () {
     var open = menu.classList.toggle('open');
     toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
   });
   menu.addEventListener('click', function (e) { if (e.target.tagName === 'A') closeMenu(); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && menu.classList.contains('open')) { closeMenu(); toggle.focus(); }
+  });
+  document.addEventListener('click', function (e) {
+    if (menu.classList.contains('open') && !e.target.closest('.nav')) closeMenu();
+  });
 
   // Filtro de horários
   var slots = Array.prototype.slice.call(document.querySelectorAll('.slot'));
@@ -494,6 +508,9 @@ var WHATSAPP = '5581996060090';
       var f = b.getAttribute('data-filter');
       buttons.forEach(function (o) { o.setAttribute('aria-pressed', String(o === b)); });
       slots.forEach(function (s) { s.hidden = f !== 'todos' && s.getAttribute('data-kind') !== f; });
+      var nx = document.querySelector('.slot.is-next');
+      var label = document.getElementById('proximo');
+      if (nx && label.textContent) label.hidden = nx.hidden;
     });
   });
 
