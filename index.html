@@ -154,12 +154,17 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--blue-soft);outline-
 .note{font-size:15px;color:var(--paper-text)}
 
 /* atletas */
-.people{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:24px 16px}
+.people{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:32px 24px}
 .person{display:flex;flex-direction:column;gap:12px}
 .ph{background:linear-gradient(170deg,#16244A,#0A1022);display:flex;align-items:center;justify-content:center;color:var(--mute);font-size:14px;letter-spacing:.08em;text-transform:uppercase;text-align:center;padding:12px;max-width:100%}
 .person img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;border-bottom:4px solid var(--blue)}
 .person h3{font-family:var(--display);font-weight:800;font-size:26px;text-transform:uppercase;line-height:1}
 .person p{font-size:15px;color:var(--text)}
+@media (max-width:560px){
+  .person{display:grid;grid-template-columns:112px minmax(0,1fr);gap:8px 16px;align-items:start}
+  .person img{grid-row:1/3}
+  .person h3{align-self:end}
+}
 .coach{display:flex;flex-wrap:wrap;gap:36px;align-items:center;background:var(--panel);border:1px solid var(--line);padding:36px}
 .coach .ph{width:180px;aspect-ratio:1;flex:0 0 auto}
 .coach-copy{flex:1 1 340px;min-width:0;display:flex;flex-direction:column;gap:12px}
@@ -403,10 +408,10 @@ footer{border-top:1px solid var(--line)}
       <p class="lead">Quem está na areia com você em cada treino.</p>
     </div>
     <div class="people">
-      <article class="person"><img src="assets/img/sabino.jpg" alt="Professor Sabino" width="600" height="800" loading="lazy"><h3>Sabino</h3><p>Professor</p></article>
-      <article class="person"><img src="assets/img/luan.jpg" alt="Professor Luan" width="600" height="800" loading="lazy"><h3>Luan</h3><p>Professor</p></article>
-      <article class="person"><img src="assets/img/carioca.jpg" alt="Professor Carioca" width="600" height="800" loading="lazy"><h3>Carioca</h3><p>Professor</p></article>
-      <article class="person"><img src="assets/img/mago.jpg" alt="Professor Mago" width="600" height="800" loading="lazy"><h3>Mago</h3><p>Professor</p></article>
+      <article class="person"><img src="assets/img/luan.jpg" alt="Professor Luan" width="600" height="800" loading="lazy"><h3>Luan</h3><p>Luan é atleta do CT e uma das referências da metodologia LS26. Vive a rotina de treino com dedicação, e o caminho que ele construiu virou exemplo dentro do CT. Hoje, como professor, passa essa base para os novos alunos e inspira quem está chegando.</p></article>
+      <article class="person"><img src="assets/img/carioca.jpg" alt="Professor Carioca" width="600" height="800" loading="lazy"><h3>Carioca</h3><p>Carioca segue o mesmo caminho do Luan: atleta do CT, formado na metodologia LS26 e com o mesmo compromisso com a evolução. Leva intensidade e disciplina para o treino e agora também ajuda a formar os novos alunos. É mais um nome da nova geração do CT.</p></article>
+      <article class="person"><img src="assets/img/mago.jpg" alt="Professor Mago" width="600" height="800" loading="lazy"><h3>Mago</h3><p>Assim como o Luan, Mago foi moldado na metodologia LS26 e vive o dia a dia de atleta no CT. O apelido vem da criatividade e da técnica, e hoje ele usa esse talento para ensinar quem está começando. É talento com método, seguindo uma trilha que já deu certo.</p></article>
+      <article class="person"><img src="assets/img/sabino.jpg" alt="Professor Sabino" width="600" height="800" loading="lazy"><h3>Sabino</h3><p>Atleta e professor no CT, Sabino também foi formado na metodologia LS26. Vive a rotina de treino por dentro, com dedicação e consistência, e passa para os novos alunos a mesma base que o formou. É compromisso dentro e fora do treino.</p></article>
     </div>
   </div>
 </section>
